@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Birthday Card</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            font-family: Arial, sans-serif;
+        }
+
+        .card {
+            width: 350px;
+            padding: 30px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        h1 {
+            color: #ff4d6d;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .cake {
+            font-size: 60px;
+            margin: 15px 0;
+            animation: bounce 1.5s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .btn {
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            background: #ff4d6d;
+            color: white;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #e63956;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>🎉 Happy Birthday, Love! 🎉</h1>
+        <div class="cake">🎂</div>
+        <p>Wishing you happiness, success, and lots of love on your special day!</p>
+        <button class="btn" onclick="alert('Enjoy your day, Ingat ka palagi!!')">
+            Click Me 🎁
+        </button>
+    </div>
+
+</body>
+</html>
